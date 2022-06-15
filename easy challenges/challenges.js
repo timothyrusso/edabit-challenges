@@ -38,3 +38,16 @@ function minMax(arr) {
 }
 
 /* ------------------------------------------------------------------------------------ */
+
+/* Create a function that takes an array as an argument and returns true or false depending on whether the average of all elements in the array is a whole number or not. */
+
+function isAvgWhole(arr) {
+  let sum = 0;
+  arr.forEach((num) => {
+    sum += num;
+  });
+  let average = sum / arr.length;
+  return Number.isInteger(average);
+}
+
+/* ------------------------------------------------------------------------------------ */
